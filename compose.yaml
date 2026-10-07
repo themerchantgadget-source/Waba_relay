@@ -1,0 +1,10 @@
+services:
+  shellbridge:
+    image: shellbridge
+    build:
+      context: shell-bridge
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 4096:4096
